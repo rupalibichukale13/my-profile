@@ -30,7 +30,17 @@
     .links a{
       text-decoration:none;
     }
+    #listSummary{
+      list-style: none;
+    }
+    .roles {
+      list-style: lower-alpha;
+      
+    }
    
+   .roles li{
+    padding-top: 8px;
+   }
     </style>
   </head>
   <body>
@@ -75,7 +85,7 @@
         <section id="Home">
             <h2 class="heading" >Professinal Summary</h2>
           
-          <ul>
+          <ul id="listSummary">
           
             <li style="color:cadetblue"> Having 1 years of experience in developing Single page Web Applications using Angular 8, HTML5, CSS3, Bootstrap 5, JavaScript, TypeScript </li>
             <li> Experience on working with version control system - GIT and GitHub
@@ -156,7 +166,7 @@
    <br> student registration, student update, and to see all the list of academic activities like score card and attendance</p>
    
    <h2>Roles and Responsibilities</h2>
-   <ul>
+   <ol class="roles">
     <li>Designed and Implemented the user interface using <b>HTML5</b> and <b>CSS3</b></li>
     <li> Work closely with backend developers for code integration</li>
     <li>Identifying and troubleshooting issues in front end codebase </li>
@@ -165,7 +175,7 @@
     <li>Implemented project using <b>Agile SCRUM</b> methodology, involved in daily stand up calls, sprint retrospective meetings</li>
     <li>involved in fixing technical issues in production environment</li>
     
-   </ul>
+   </ol>
        </section>
        <hr>
        <!-- Education Section -->
