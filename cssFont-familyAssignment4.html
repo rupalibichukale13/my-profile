@@ -4,37 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #heading{
-            color:deeppink;
-            font-weight: bolder;
-            font-family: "Roboto", sans-serif;
-            font-weight: 700;
-            font-style: italic;
-        }
-        .content{
-            color:orchid;
-            font-weight:bolder ;
-            font-family: "Poppins", sans-serif;
-             font-style: normal;
-        }
-        
-        table, tr, th,td{
-            border: 2px solid rgb(218, 231, 205);
-            border-collapse: collapse;
-        }
-        td,th{
-            padding: 10px;
-        }
-        .svg{
-            color: blueviolet;
-        }
-        #projectDesc::selection{
-          background-color: orange;
+  <style>
+    *{
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+#heading{
+    color:deeppink;
+    font-weight: bolder;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    
+    
+}
+.content{
+    color:orchid;
+    font-weight:bolder ;
+    font-family: "Poppins", sans-serif;
+     font-style: normal;
+}
+/* Navigation Section */
+#navSection li{
+display: inline;
+margin-right:30px ;
+}
+table, tr, th,td{
+    border: 2px solid rgb(218, 231, 205);
+    border-collapse: collapse;
+}
+td,th{
+    padding: 10px;
+}
+.svg{
+    color: blueviolet;
+}
+#projectDesc::selection{
+  background-color: orange;
 
-        }
-    </style>
-</head>
+}
+#navSection a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+/* container Section */
+#container{
+    border: 5px solid chartreuse;
+    width: 700px;
+    margin:20px auto ;
+ 
+}
+
+  </style>
+   
+  </head>
 <body>
      <!-- Header Section -->
     <header link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,21 +86,26 @@
           <hr>
            <!-- Navigation section -->
           
-           <nav>
-            <a href="#Home"  id="heading">HOME</a>&nbsp;&nbsp;&nbsp; 
-            <a href="#TechStack" id="heading" >TECH STACK</a>&nbsp;&nbsp;&nbsp; 
-            <a href="#project"  id="heading" >PROJECTS</a>&nbsp;&nbsp;&nbsp; 
-            <a href="#Education"  id="heading" >EDUCATION</a>&nbsp;&nbsp;&nbsp; 
-            <a href="personaldetails.html" target="_blank"  id="heading" >PERSONAL DETAILS</a>&nbsp;&nbsp;&nbsp; 
-            <a href="others.html"   id="heading"  >OTHERS</a>
+           <nav id="navSection">
+            <ul>
+              <li> <a href="#Home"  id="heading">HOME</a></li>
+              <li><a href="#TechStack" id="heading" >TECH STACK</a></li>
+              <li> <a href="#project"  id="heading" >PROJECTS</a></li>
+              <li><a href="#Education"  id="heading" >EDUCATION</a></li>
+              <li><a href="personaldetails.html" target="_blank"  id="heading" >PERSONAL DETAILS</a></li>
+              <li><a href="others.html"   id="heading"  >OTHERS</a></li>
+            </ul>
+
+           
+            
             
             </nav>
             <hr>
     <!-- Main Section -->
-    <section>
+    <section id="container">
       <!-- Home Section -->
  
-        <section >
+        <section  >
           <h2 id="heading">Professinal Summary</h2>
         
         <ul class="content">
@@ -157,7 +187,7 @@
     <p class="content"><b>Time Size:</b> 06 &nbsp; &nbsp; &nbsp; &nbsp; <b>Duration:</b><mark><i>2021-1<sup>st</sup>-July till <u>present</u></i></mark>  </p>
     <p class="content" id="projectDesc"><b>Project Description:</b> This project is mainly used for student management in colleges, where it helps to manage student record like
    <br> student registration, student update, and to see all the list of academic activities like score card and attendance</p>
-   
+   <hr>
    <h2 id="heading">Roles and Responsibilities</h2>
    <ul class="content">
     <li>Designed and Implemented the user interface using <b>HTML5</b> and <b>CSS3</b></li>
