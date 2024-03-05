@@ -4,65 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    *{
-    margin: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-}
+
 #heading{
     color:deeppink;
     font-weight: bolder;
     font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
+    text-decoration: none;
+   
     
     
-}
+      }
+      #background{
+        background-color: black;
+        position: fixed;
+        top: 20px;
+       
+        
+      
+      }
 .content{
     color:orchid;
     font-weight:bolder ;
     font-family: "Poppins", sans-serif;
      font-style: normal;
+
 }
-/* Navigation Section */
-#navSection li{
-display: inline;
-margin-right:30px ;
+#navSection{
+  background-color: aqua;
+  position: fixed;
+  top: 80px;
+  
+  
+ 
 }
+#listSummary li{
+        list-style-type: none;
+      }
+      #listSummary li::marker{
+        content: "✍";
+      }
+
 table, tr, th,td{
-    border: 2px solid rgb(218, 231, 205);
+    border: 2px solid rgb(14, 17, 10);
     border-collapse: collapse;
+    
 }
 td,th{
     padding: 10px;
 }
 .svg{
-    color: blueviolet;
+    color: rgb(235, 230, 240);
 }
 #projectDesc::selection{
   background-color: orange;
 
 }
-#navSection a{
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-weight: bold;
-}
-/* container Section */
-#container{
-    border: 5px solid chartreuse;
-    width: 700px;
-    margin:20px auto ;
- 
-}
 
-  </style>
+.icons{
+         
+ bottom: 20px;
+ right: 20px;
+position: fixed;
+
+        
+         
+}
+#container{
+    width: 800px;
+    position: relative;
+    top: 70px;
+    margin: 60px auto;
+}
+.text{
+  background-color: rgb(238, 238, 180);
+}
+</style>
    
   </head>
 <body>
      <!-- Header Section -->
-    <header link rel="preconnect" href="https://fonts.googleapis.com">
+    <header link rel="preconnect" href="https://fonts.googleapis.com" id="background">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
         <p > <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16" >
@@ -83,32 +106,32 @@ td,th{
           </svg>&nbsp;
           <span id="heading"> RESUME</span></a></p>
           </header>
-          <hr>
+          
            <!-- Navigation section -->
           
            <nav id="navSection">
-            <ul>
-              <li> <a href="#Home"  id="heading">HOME</a></li>
-              <li><a href="#TechStack" id="heading" >TECH STACK</a></li>
-              <li> <a href="#project"  id="heading" >PROJECTS</a></li>
-              <li><a href="#Education"  id="heading" >EDUCATION</a></li>
-              <li><a href="personaldetails.html" target="_blank"  id="heading" >PERSONAL DETAILS</a></li>
-              <li><a href="others.html"   id="heading"  >OTHERS</a></li>
-            </ul>
+           
+              <a href="#Home"  id="heading">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#TechStack" id="heading" >TECHSTACK</a>&nbsp;&nbsp;&nbsp;&nbsp;
+               <a href="#project"  id="heading" >PROJECTS</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#Education"  id="heading" >EDUCATION</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="personaldetails.html" target="_blank"  id="heading" >PERSONAL DETAILS</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="others.html"   id="heading"  >OTHERS</a>
+          
 
            
             
             
             </nav>
-            <hr>
+            
     <!-- Main Section -->
     <section id="container">
       <!-- Home Section -->
  
         <section  >
-          <h2 id="heading">Professinal Summary</h2>
+          <h2 id="heading"  class="text" class="title">Professional Summary</h2>
         
-        <ul class="content">
+        <ul class="content" id="listSummary">
         
           <li > Having 1 years of experience in developing Single page Web Applications using Angular 8, HTML5, CSS3, Bootstrap 5, JavaScript, TypeScript </li>
           <li> Experience on working with version control system - GIT and GitHub
@@ -127,10 +150,11 @@ td,th{
          </li>
          <li> Ability to work with people at all levels in the program</li>
            </ul>
-       </section>
+          </section>
+       
        <hr>
        <section >
-        <h2 id="heading" >My Technology Stack is</h2>
+        <h2 id="heading" class="text" >My Technology Stack is</h2>
         <table id="border"  class="content">
           <thead>
             <tr>
@@ -167,8 +191,12 @@ td,th{
 
        </section>
        <hr>
+       <section  class="icons">
+        <img src="https://th.bing.com/th/id/OIP.hbr47SG8Nl1CUsQBVLhz_AHaHa?rs=1&pid=ImgDetMain" width="50px" height="50px">   &nbsp;&nbsp;&nbsp;
+        <img src="https://i2.wp.com/www.titanui.com/wp-content/uploads/2014/02/03/iOS-Chat-App-Icon-PSD.png" width="50px" height="50px">
+       </section>
        <section >
-        <h2 id="heading" >Projects Details</h2>
+        <h2 id="heading"  class="text">Projects Details</h2>
         <p class="content"><b>Name: &nbsp;&nbsp; <u>Student Management</u></b></p>
     <p class="content" ><b><u>Environment:</b></u>&nbsp; &nbsp;</p>
       <ul class="content">
@@ -188,7 +216,7 @@ td,th{
     <p class="content" id="projectDesc"><b>Project Description:</b> This project is mainly used for student management in colleges, where it helps to manage student record like
    <br> student registration, student update, and to see all the list of academic activities like score card and attendance</p>
    <hr>
-   <h2 id="heading">Roles and Responsibilities</h2>
+   <h2 id="heading" class="text">Roles and Responsibilities</h2>
    <ul class="content">
     <li>Designed and Implemented the user interface using <b>HTML5</b> and <b>CSS3</b></li>
     <li> Work closely with backend developers for code integration</li>
@@ -203,7 +231,7 @@ td,th{
        <hr>
        <!-- Education Section -->
        <section >
-        <h2 id="heading"> My Education Details</h2>
+        <h2 id="heading" class="text"> My Education Details</h2>
         <table border="1" class="content">
           <thead>
             <tr>
@@ -264,6 +292,7 @@ td,th{
       Copyright &COPY;2024
       Rupali Suresh Bichukale
    </section>
+   
   
   </body>
 </html>
