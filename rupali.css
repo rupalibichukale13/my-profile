@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+
+#heading{
+    color:deeppink;
+    font-weight: bolder;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    background-color: rgb(172, 199, 199);
+    margin-bottom: 20px;
+   margin-top: 10px;
+    
+}
+.content{
+    color:orchid;
+    font-weight:bolder ;
+    font-family: "Poppins", sans-serif;
+     font-style: normal;
+     background-color: rgb(172, 199, 199);
+     margin-top:10px;
+    margin-bottom: 10px;
+}
+#navSection a{
+    margin-left: 60px;
+    text-decoration: none;
+}
+    
+    
+    table, tr, th,td{
+        border: 2px solid rgb(218, 231, 205);
+        border-collapse: collapse;
+        color: blue;
+    }
+    td,th{
+        padding: 10px;
+    }
+    .mark{
+        color: black;
+    }
+    #listSummary li{
+        list-style-type: none;
+      }
+      #listSummary li::marker{
+        content: "✍";
+      }
