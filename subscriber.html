@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #card{
+            border: 2px solid cadetblue;
+            height: 550px;
+            width: 450px;
+            border-radius: 15px;
+          margin: auto;
+          background-color: rgb(246, 248, 250);
+          box-shadow: 7px 6px 9px rgb(211, 221, 221);
+        }
+        .box{
+          margin-left: 45px;
+          background-color: blue;
+          border-radius: 15px;
+          color: white;
+          font-weight: bolder;
+          font-family:  "Roboto", sans-serif;
+           
+        }
+        .label{
+           width: 350px;
+           height: 30px;
+           border-radius: 10px;
+          margin-left: 20px;
+          font-family: "Roboto", sans-serif;
+        }
+        .text{
+            width: 350px;
+           height: 50px;
+           border-radius: 10px;
+           margin-left: 20px;
+           padding-bottom: 10px;
+           font-family: "Roboto", sans-serif;
+        }
+        #heading{
+            margin-left: 20px;
+            font-weight: bolder;
+            font-family: "Roboto", sans-serif;
+        }
+        .star{
+            color: red;
+        }
+        #head{
+            margin-left: 50px;
+            font-weight: bolder;
+            font-family: "Roboto", sans-serif;
+        }
+       .button{
+        margin-top:170px ;
+        margin-left:330px ;
+        padding-bottom: 5px;
+        padding-top: 5px;
+       
+       }
+    </style>
+</head>
+<body>
+    <section id="card">
+        <h2 id="head">SubScriber</h2>
+        <section >
+            <hr>
+            <textarea name=""  id=""  cols="45"  rows="15" class="box">We're sorry to see you go, but hey, no hard feelings, hopefully we will see you back one day.
+
+                Please fill in your email address in order to unsubscribe from the list.
+                
+                You will receive an email to confirm your unsubscription, just to make sure this is not an accident or somebody else tries to unsubscribe you.</textarea>
+        </section>
+            <section class="label">
+                <label for="" id="heading" >Email<span class="star">*</span></label>
+                <br>
+                <input type="text" class="label"><br><br> 
+                
+                <label for="" id="heading" >Unsubscribe reason</label>
+                <br>
+                <input type="text" class="text" required placeholder="Unsubscribe reason" ><br><br>
+            </section>
+            
+        <section >
+            <button type="button" class="button" >Unsubscribe</button>
+        </section>
+    </section>
+    
+</body>
+</html>
